@@ -1,0 +1,23 @@
+.todoList {
+   width: 100%;
+
+
+    ul {
+        display: grid;
+        grid-column: 1fr;
+        margin-top: 2.376rem;
+        gap: 1.875rem;
+        
+
+        @media (min-width: 1200px){
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
+
+    & > p {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+}
